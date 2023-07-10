@@ -22,7 +22,7 @@ public class SubsequenceOfArray {
 
 	public static void main(String[] args) {
 
-		int a[] = { 2, 2, 3 };
+		int a[] = { 1, 2, 3 };
 		int n = a.length;
 		List<Integer> list = new ArrayList<>();
 		subSequence(0, a, n, list);

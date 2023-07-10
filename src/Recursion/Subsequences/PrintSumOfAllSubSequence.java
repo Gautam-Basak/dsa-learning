@@ -2,6 +2,7 @@ package Recursion.Subsequences;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class PrintSumOfAllSubSequence {
@@ -25,7 +26,7 @@ public class PrintSumOfAllSubSequence {
 		List<Integer> ans = new ArrayList<>();
 		
 		findCombinations(0, 0, arr, n, ans);
-		Arrays.sort(arr);
+		Collections.sort(ans);
 		return ans;
 	}
 

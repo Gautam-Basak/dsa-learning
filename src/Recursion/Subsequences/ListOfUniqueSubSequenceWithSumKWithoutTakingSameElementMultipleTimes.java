@@ -33,7 +33,7 @@ public class ListOfUniqueSubSequenceWithSumKWithoutTakingSameElementMultipleTime
 
 	public static void main(String[] args) {
 
-		int arr[] = { 4, 4 };
+		int arr[] = { 1, 2, 3 };
 		int target = 4;
 
 		// We can do it in Simple Way as before but it is been done based on LeetCode
