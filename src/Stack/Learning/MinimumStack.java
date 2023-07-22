@@ -98,8 +98,9 @@ public class MinimumStack {
 
 	public static void main(String[] args) {
 
-		// Implement Min Stack | O(2N) and O(N) Space Complexity. Design a stack that
+		// Implement Min Stack in O(2N) and O(N) Space Complexity. Design a stack that
 		// supports push, pop, top, and retrieving the minimum element in constant time.
+		
 		// T.C = O(1)
 		// S.C = O(2n) -> Stack is of type Pair where we enter two values.
 		MinStack ms = new MinStack();
