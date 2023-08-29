@@ -5,7 +5,7 @@ public class CheckIfStringIsRotated {
 	public static void main(String[] args) {
 
 		String s1 = "abc";
-		String s2 = "cab";
+		String s2 = "cba";
 
 		System.out.println(checkRotation(s1, s2));
 

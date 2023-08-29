@@ -1,33 +1,30 @@
 package String.BasicAndEasy;
 
-import java.util.Arrays;
-
 public class LongestOddNumberInString {
 
-	public static String longestCommonPrefix(String[] arr) {
-		int n = arr.length;
-
-		String result = arr[0];
-
-		for (int i = 1; i < n; i++) {
-
-			while (arr[i].indexOf(result) != 0) {
-
-				System.out.println(arr[i].indexOf(result));
-
-				result = result.substring(0, result.length() - 1);
-
-				if (result.isEmpty()) {
-					return "-1";
-				}
-			}
-		}
-		return result;
-	}
+	
 
 	public static void main(String[] args) {
 
-		String[] input = { "geeks", "geeksforgeeks", "gee", "geeks" };
-		System.out.println("The longest Common Prefix is : " + longestCommonPrefix(input));
+		String s = "501";
+		System.out.println(longestOddNumber(s, s.length()));
+		
+	}
+
+	private static String longestOddNumber(String s, int n) {
+		
+		String res = "";
+		for(int i=n-1; i>=0; i--) {
+			
+			//Check whether the last character is odd or not
+			if(s.charAt(i)%2 != 0) {
+				
+				//If the last character is odd, then entire String is odd.
+				res = s.substring(0, i+1);
+				return res;
+			}
+		}
+		
+		return res;
 	}
 }

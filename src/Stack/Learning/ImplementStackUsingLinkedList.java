@@ -60,6 +60,7 @@ class MyStackLinkedList {
 		int topData = top.value;
 
 		top = top.next;
+		size--;
 		return topData;
 	}
 
@@ -85,6 +86,7 @@ public class ImplementStackUsingLinkedList {
 		System.out.println("Stack size: " + s.stackSize());
 		System.out.println("Stack is empty or not: " + s.stackIsEmpty());
 		System.out.println(s.stackPeep());
+		System.out.println("Stack size: " + s.stackSize());
 
 	}
 

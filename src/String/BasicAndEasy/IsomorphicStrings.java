@@ -6,8 +6,12 @@ public class IsomorphicStrings {
 
 	public static void main(String[] args) {
 
-		String str1 = "abc";
-		String str2 = "pqr";
+		// Two strings (s and t) are said to be isomorphic if the characters in s can be
+		// replaced to get t. All occurrences of a character must be replaced
+		// with another character while preserving the order of characters
+
+		String str1 = "zabqcc";
+		String str2 = "zpzfzz";
 
 		// Function Call
 		if (str1.length() == str2.length() && areIsomorphic(str1, str2))

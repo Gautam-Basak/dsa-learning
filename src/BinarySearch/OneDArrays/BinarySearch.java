@@ -4,8 +4,8 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 
-		int a[] = { 2, 5, 3, 9, 10, 14, 16, 18, 20, 22, 24 };
-		int target = 2;
+		int a[] = { 2, 5, 3, 9, 10, 14, 28, 18, 20, 22, 24 };
+		int target = 20;
 		// Let think that we don't know whether the given array in sorted asc or des
 
 		System.out.println(binarySearch(a, target));

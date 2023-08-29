@@ -18,7 +18,7 @@ public class CheckIfaTreeIsBSTorBT {
 		BSTorBTNode root = new BSTorBTNode(5);
 		root.left = new BSTorBTNode(2);
 		root.right = new BSTorBTNode(8);
-		root.left.left = new BSTorBTNode(1);
+		root.left.left = new BSTorBTNode(4);
 		root.left.right = new BSTorBTNode(3);
 		root.right.right = new BSTorBTNode(9);
 		root.right.left = new BSTorBTNode(6);
@@ -29,7 +29,10 @@ public class CheckIfaTreeIsBSTorBT {
 		if (isValidBST(root, minValue, maxValue))
 			System.out.println("Yes the BT is BST");
 		else
-			System.out.println("Yes the BT is BST");
+			System.out.println("No the BT is not BST");
+
+		// The O/P is false because root.left.val = 2 which should be greater than
+		// root.left.left.val = 4;
 
 	}
 

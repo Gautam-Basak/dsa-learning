@@ -14,7 +14,7 @@ public class CheckArrayIsSorted {
 
 	public static void main(String[] args) {
 
-		// 1. Brute Force (Using two loops and Comparing
+		// 1. Brute Force (Using two loops and Comparing)
 		// TC = O(N^2)
 		// SC = O(1)
 		

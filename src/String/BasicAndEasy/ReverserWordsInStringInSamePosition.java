@@ -4,12 +4,15 @@ public class ReverserWordsInStringInSamePosition {
 
 	private static void reverse(char[] ch, int start, int end) {
 
-		char temp = ch[start];
-		ch[start] = ch[end];
-		ch[end] = temp;
+		while (start <= end) {
+			char temp = ch[start];
+			ch[start] = ch[end];
+			ch[end] = temp;
 
-		start++;
-		end--;
+			start++;
+			end--;
+
+		}
 
 	}
 
@@ -31,7 +34,7 @@ public class ReverserWordsInStringInSamePosition {
 
 	public static void main(String[] args) {
 
-		String s = "Ram is Good Boy";
+		String s = "I am a Java Developer";
 		char[] ch = s.toCharArray();
 
 		reverseWordInSamePos(ch, ch.length);

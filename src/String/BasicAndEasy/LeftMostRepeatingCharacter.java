@@ -67,10 +67,10 @@ public class LeftMostRepeatingCharacter {
 
 	public static void main(String[] args) {
 
-		String s = "abcccccceadfgi";
+		String s = "abccccccedfgi";
 
 		// Naive Solution
-		// Use two for loops, one from i=0 and other from j=i+0,check for equal.
+		// Use two for loops, one from i=0 and other from j=i+1,check for equal.
 		// If found return the index
 		System.out.println(leftRepeatingNaiveSol(s, s.length()));
 

@@ -31,7 +31,7 @@ public class ReverseStringKeepItsSpace {
 
 	public static void main(String[] args) {
 
-		String s = "Ram is Good Boy";
+		String s = "I am a Java Developer";
 		reverseWordInSamePos(s);
 
 	}
